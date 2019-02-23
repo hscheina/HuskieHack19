@@ -1,0 +1,72 @@
+{
+    "posts": [
+      {
+        "postId": 1,
+        "topicId": 2139,
+        "title": "Test Post",
+        "description": "This is a description",
+        "createdDate": "2019-02-23T00:00:00",
+        "topic": {
+          "topicId": 1,
+          "name": "Topic1"
+        },
+        "comments": [
+          {
+            "commentId": 7113,
+            "postId": 1,
+            "userId": 1,
+            "createdDate": "2019-02-23T00:00:00",
+            "description": "Example desc"
+          },
+          {
+            "commentId": 7115,
+            "postId": 1,
+            "userId": 2,
+            "createdDate": "2019-02-24T00:00:00",
+            "description": "Example desc2"
+          }
+        ],
+        "tags": [
+          {
+            "tagId": 7113,
+            "name": "cat"
+          },
+          {
+            "tagId": 7115,
+            "name": "dog"
+          }
+        ],
+        "userID": 1
+      }
+    ],
+    "tags": [
+        {
+            "tagId": 7113,
+            "name": "cat"
+          },
+          {
+            "tagId": 7115,
+            "name": "dog"
+          }
+    
+    ],
+    "users": [
+        {
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "example@gmail.com",
+            "lastLoginDate": "0001-01-01T00:00:00",
+            "password": "password",
+            "createdDate": "0001-01-01T00:00:00",
+            "userId": 1
+          }
+    ],
+    "topics": [
+        {
+            "topicId": 1,
+            "name": "Topic1"
+          }
+          
+    ]
+
+  }

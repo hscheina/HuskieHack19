@@ -6,3 +6,6 @@ https://getbootstrap.com/docs/4.0/components/alerts/
 
 Underscore.js
 https://underscorejs.org/
+
+Coolers (Color Palette)
+https://coolors.co/6a0136-e5a9c7-2b2b2b-8cbcc3-055864

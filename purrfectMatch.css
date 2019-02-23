@@ -28,3 +28,10 @@ hr {
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+.navbar {
+	background-color: #2b2b2b;
+	min-height: 80px;
+}
+.collapse {
+	margin-top: 15px;
+}
