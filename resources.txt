@@ -1,1 +1,8 @@
+Free images:
 https://unsplash.com/
+
+Boostrap 4 components:
+https://getbootstrap.com/docs/4.0/components/alerts/
+
+Underscore.js
+https://underscorejs.org/
