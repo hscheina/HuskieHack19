@@ -7,5 +7,7 @@
 	//internal
 - the intersection of femininity and tech
 - LGBT issues
+- resources for teachers
+- resources for parents
 
 feel free to add more topics that girl coders might find interesting!
