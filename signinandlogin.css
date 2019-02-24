@@ -1,0 +1,18 @@
+.form-check-label {
+	font-size: 15px;
+}
+
+.tab-content {
+	padding: 10px;
+	border-bottom: 1px solid #dee2e6;
+	border-left: 1px solid #dee2e6;
+	border-right: 1px solid #dee2e6;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+.btn {
+	margin: 10px;
+}
