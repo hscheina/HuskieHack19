@@ -1,21 +1,94 @@
 $( document ).ready(function() {
     console.log( "ready!" );
     initData();
+    //    button click
+    $("#btnSubmit").click(function(){
+      //When this button (with the id btnSubmit) is clicked, it will attempt to log the user in
+      loginUser ();
+
+  });
+   $("#btnSignup").click(function(){
+      //When this button (with the id btnSignup) is clicked, it will attempt to sign up the user
+      signUser ();
+   });  
 });
 
+var posts = [];
+var topics = [];
+var users = [];
+var tags = [];
+
   function initData() {
-    $.getJSON( "http://0.0.0.0:8000/sample.json", function( data ) {
-        var posts = [];
-        var topics = [];
-        var users = [];
-        var tags = [];
-        /*$.each( data, function( key, val ) {
-          items.push( "<li id='" + key + "'>" + val + "</li>" );
+
+      
+    var testUsers = localStorage.getItem("usersArray");
+    if (testUsers == null) {
+
+      $.getJSON( "https://raw.githubusercontent.com/hscheina/HuskieHack19/master/sample.json", function( data ) {
+          posts = data.posts;
+          topics = data.topics;
+          users = data.users;
+          tags = data.tags;
+
         });
-       */
-        /*$( "<ul/>", {
-          "class": "my-new-list",
-          html: items.join( "" )
-        }).appendTo( "body" ); */
-      });
+      } else {
+      //Every time the page loads, it uses the cookie.
+      users = JSON.parse(localStorage.getItem("usersArray"));
+      topics = JSON.parse(localStorage.getItem("topicsArray"));
+      posts = JSON.parse(localStorage.getItem("postsArray"));
+      tags = JSON.parse(localStorage.getItem("tagsArray"));
+      
+      }
+
+    }
+function loginUser() {
+  var email = $("#email").val();
+  var password = $("#password").val();
+  var foundUser = users.find(x => x.email === email);
+  if (foundUser == null) {
+    alert("The user was not found!")
   }
+  else {
+    alert("Found you: " + foundUser.firstName)
+    if (foundUser.password == password) {
+      console.log("Password matches!")
+      alert("Found!")
+      foundUser.lastLoginDate = moment();
+
+    }
+    else {
+      alert("Please put in the correct password!")
+    }
+  }
+
+}
+
+function signUser() {
+  var email = $("#emailSign").val();
+  
+  var foundUser = users.find(x => x.email === email);
+    if (foundUser == null) {
+      var firstName = $("#firstNameSign").val();
+      var lastName = $("#lastNameSign").val();
+      var password = $("#passwordSign").val();
+      var currentDate = moment().toISOString();
+      var newUser = {firstName:firstName, lastName:lastName, password: password, email: email};
+      newUser.createdDate = currentDate;
+      newUser.lastLoginDate = currentDate;
+      newUser.userId = users.length + 1;
+      console.log(currentDate);
+      users.push(newUser);
+  
+      localStorage.setItem("usersArray",JSON.stringify(users));
+      localStorage.setItem("topicsArray",JSON.stringify(topics));
+      localStorage.setItem("postsArray",JSON.stringify(posts));
+      localStorage.setItem("tagsArray",JSON.stringify(tags));
+  }
+  else{
+    alert("User already exists!")
+  }
+}
+
+var redirect = function() {
+  document.location.href="profile.html";
+}
