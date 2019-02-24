@@ -42,6 +42,7 @@ var tags = [];
 
     }
 function loginUser() {
+  
   var email = $("#email").val();
   var password = $("#password").val();
   var foundUser = users.find(x => x.email === email);
@@ -54,16 +55,18 @@ function loginUser() {
       console.log("Password matches!")
       alert("Found!")
       foundUser.lastLoginDate = moment();
-
+      tryRedirect(1);
     }
     else {
       alert("Please put in the correct password!")
+      tryRedirect(0);
     }
   }
-
+  
 }
 
 function signUser() {
+  
   var email = $("#emailSign").val();
   
   var foundUser = users.find(x => x.email === email);
@@ -83,12 +86,26 @@ function signUser() {
       localStorage.setItem("topicsArray",JSON.stringify(topics));
       localStorage.setItem("postsArray",JSON.stringify(posts));
       localStorage.setItem("tagsArray",JSON.stringify(tags));
+      tryRedirect(1);
   }
   else{
     alert("User already exists!")
+    tryRedirect(0);
   }
+  
 }
 
-var redirect = function() {
-  document.location.href="profile.html";
+function tryRedirect(f) {
+  var redirect = function() {
+    document.location.href="profile.html";
+  }
+  if (f == 1) {
+    redirect();
+  }
+  else {
+    console.log("No redirect");
+  }
+  
+
 }
+
