@@ -4,7 +4,7 @@
 	<title>CODE.GRL</title>
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="navbar.css">
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <style type="text/css">
@@ -40,6 +40,10 @@ h3 {
 
 }
 
+html {
+  height: 100%;
+}
+
 .navbar {
 	background-color: #8CBCC3;
 }
@@ -54,12 +58,17 @@ a:hover {
 	text-decoration: none;
 	color: rgba(183,220,225,1);
 }
+
+.loginbtn:hover {
+  color:white;
+}
 </style>
+
+  <link rel="stylesheet" type="text/css" href="navbar.css">
 </head>
 <body>
-	
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top Dropshadow4navbar">
-	<div class="container">
+  <div class="container">
   <a class="navbar-brand" href="home.html">CODE.GRL</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -93,16 +102,15 @@ a:hover {
       </li>
             <li class="nav-item">
         <a class="nav-link" href="Contact.html">Contact</a>
-      </li>      
-       <a class="nav-link" href="signinandlogin.html">Log in</a>
-      </li>
-      </li>
-    </ul>
+        </li>   
+            </ul>   
+          <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-light loginbtn my-2 my-sm-0"><a href="signinandlogin.html">Login</a></button>
+    </form>
     
 </div>
   </div>
 </nav>
-
 
 
 
