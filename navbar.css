@@ -1,12 +1,16 @@
 .Dropshadow4navbar {
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
-    background-color: pink;
 
-    /* the rest of your styling */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar-brand {
 	font-family: 'VT323', monospace;
+}
+
+.navbar {
+	background-color: #8CBCC3;
+}
+
+.webcontent {
+	margin-top: 70px;
 }
