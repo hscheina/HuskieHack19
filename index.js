@@ -117,8 +117,8 @@ function signUser() {
       localStorage.setItem("postsArray",JSON.stringify(posts));
       localStorage.setItem("tagsArray",JSON.stringify(tags));
 
-      sessionStorage.setItem('status','loggedIn')
-      sessionStorage.setItem('userId', JSON.stringify(userId)) 
+      sessionStorage.setItem('status','loggedIn');
+      sessionStorage.setItem('userId', JSON.stringify(newUser.userId));
       tryRedirect(1);
   }
   else{
