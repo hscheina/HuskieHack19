@@ -227,7 +227,7 @@ function displayPosts() {
 
 function tryRedirect(f) {
   var redirect = function() {
-    document.location.href="profile.html";
+    document.location.href="forum.html";
   }
   if (f == 1) {
     redirect();
