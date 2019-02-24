@@ -26,6 +26,24 @@
       color: #8CBCC3;
     }
 
+    body {
+  background: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+html {
+  height: 100%;
+}
+
+.tab-content {
+  background-color: white;
+}
+
+.navvie {
+  background-color: rgba(255,255,255,0.7)
+}
+
     .nav-link:hover {
       color: rgba(183,220,225,1);
     }
@@ -51,7 +69,7 @@
         <a class="nav-link" href="home.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Forum</a>
+        <a class="nav-link" href="forum.html">Forum</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,10 +129,10 @@
       <div class="col-2 col-md-3 col-lg-4"></div>
       <div class="col-8 col-md-6 col-lg-4">
   <ul class="nav nav-tabs">
-  <li class="nav-item">
+  <li class="nav-item navvie rounded-top">
     <a class="nav-link active" data-toggle="tab" href="#menu1">Log in</a>
   </li>
-  <li class="nav-item">
+  <li class="nav-item navvie rounded-top">
     <a class="nav-link" data-toggle="tab" href="#menu2">Sign up</a>
   </li>
 </ul>
@@ -124,16 +142,16 @@
     <form>
   <div class="form-group"> 
     <label for="exampleInputUsername">Username</label>
-    <input type="email" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+    <input type="email" class="form-control" id="exampleInputUsername" id="email" aria-describedby="emailHelp" placeholder="Enter username">
     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control" id="exampleInputPassword1" id="password" placeholder="Password">
   </div>
   <div class="text-center">
   <input class="btn btn-primary" type="reset" value="Reset">
-  <button type="submit" class="btn btn-primary">Login</button>
+  <button type="submit" id="btnSubmit" class="btn btn-primary">Login</button>
 </div>
 </form>
   </div>
@@ -142,24 +160,24 @@
   <div class="form-group" id="signup">
     <div class="form-group">
       <label for="inputFirstName">First Name</label>
-      <input type="email" class="form-control" id="inputFirstName" placeholder="Enter username">
+      <input type="text" class="form-control" id="inputFirstName" id="firstNameSign" placeholder="Enter first name">
     </div>
     <div class="form-group">
       <label for="inputLastName">Last Name</label>
-      <input type="email" class="form-control" id="inputLastName" placeholder="Enter username">
+      <input type="text" class="form-control" id="inputLastName" id="lastNameSign" placeholder="Enter last name">
     </div>
     <div class="form-group">
-      <label for="inputUsername">Username</label>
-      <input type="email" class="form-control" id="inputUsername" placeholder="Enter username">
+      <label for="inputUsername">Email</label>
+      <input type="email" class="form-control" id="inputUsername" id="emailSign" placeholder="Enter email">
     </div>
     <div class="form-group">
       <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+      <input type="password" class="form-control" id="inputPassword4" id="passwordSign" placeholder="Password">
     </div>
-        <div class="form-group">
+   <!--     <div class="form-group">
       <label for="inputPassword5">Re-enter password</label>
       <input type="password" class="form-control" id="inputPassword5" placeholder="Re-enter Password">
-    </div>
+    </div> -->
 
     <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -171,7 +189,7 @@
     </div>
     <div class="text-center">
      <input class="btn btn-primary" type="reset" value="Reset">
-  <button type="submit" class="btn btn-primary">Sign up</button>
+  <button type="submit" id="btnSignup" class="btn btn-primary">Sign up</button>
 </div>
   </form>
 </div>
