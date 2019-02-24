@@ -1,0 +1,12 @@
+body {
+	background: url(pink.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.webcontent {
+	background-color: white;
+	border: 1px solid #ead0d1;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+}
