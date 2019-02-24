@@ -3,12 +3,12 @@ $( document ).ready(function() {
     initData();
     //    button click
     $("#btnSubmit").click(function(){
-      //When this button is clicked, it will attempt to log the user in
+      //When this button (with the id btnSubmit) is clicked, it will attempt to log the user in
       loginUser ();
 
   });
    $("#btnSignup").click(function(){
-      //When this button is clicked, it will attempt to sign up the user
+      //When this button (with the id btnSignup) is clicked, it will attempt to sign up the user
       signUser ();
    });  
 });
@@ -30,17 +30,9 @@ var tags = [];
           users = data.users;
           tags = data.tags;
 
-          /*$.each( data, function( key, val ) {
-            items.push( "<li id='" + key + "'>" + val + "</li>" );
-          });
-        */
-          /*$( "<ul/>", {
-            "class": "my-new-list",
-            html: items.join( "" )
-          }).appendTo( "body" ); */
         });
       } else {
-           
+      //Every time the page loads, it uses the cookie.
       users = JSON.parse(localStorage.getItem("usersArray"));
       topics = JSON.parse(localStorage.getItem("topicsArray"));
       posts = JSON.parse(localStorage.getItem("postsArray"));
@@ -95,4 +87,8 @@ function signUser() {
   else{
     alert("User already exists!")
   }
+}
+
+var redirect = function() {
+  document.location.href="profile.html";
 }
