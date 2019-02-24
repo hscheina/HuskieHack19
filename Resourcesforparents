@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Parent Resources</title>
 	
 	<style type="text/css" src="index.css"></style>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" href="resources.css">
 </head>
 <body>
-	<h1>Resources for Parents</h1>
+	<h1>Parent Resources</h1>
 <p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Does your child like to solve problems? They might be interested in coding, and it's never too early or too late to start! The computer science industry is rapidly growing, and learning to code at a young age gives your child an edge in an increasingly competitive workforce. Coding also fosters incredible creativity and builds up critical thinking ability, both important life skills to have. We know parents always want what's best for their kids, so here are some resources to start your child off on their coding adventure. These are all great sites designed to make learning a blast instead of a bore!
 </p>
-	<div class="card">
-  <div class="card-body">Basic card</div>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-sm">
+	<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="hourOfCode.jpg" alt="Hour of Code at a school">
+  <div class="card-body">
+    <h5 class="card-title">Code.org</h5>
+    <p class="card-text">Code.org is a nonprofit dedicated to bringing computer science to all schools, and has done so with their Hour Of Code program campaign that has worked with 15% of all students globally. The site offers free computer science courses and allows kids to create fun coding projects, with material for all ages, even young kids 4-6.</p>
+    <a href="https://code.org/" class="btn btn-primary">Visit this site!</a>
+  </div>
 </div>
-<div class="card">
-  <div class="card-body">Basic card</div>
 </div>
+ <div class="col-sm">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="codecombat.jpg" alt="CodeWars">
+  <div class="card-body">
+    <h5 class="card-title">Code Combat</h5>
+    <p class="card-text">This site, for ages 5-17, allows users to learn Python or Javacript through an RPG-roleplaying game. This fun and innovative take on coding guides kids through different worlds as they progress, making learning programming fun!</p>
+    <a href="https://codecombat.com/" class="btn btn-primary">Visit this site!</a>
+  </div>
+ </div>
+</div>
+  <div class="col-sm">
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="codewars.jpg" alt="CodeWars">
+  <div class="card-body">
+    <h5 class="card-title">Code Wars</h5>
+    <p class="card-text">Bringing a competitive game aspect into coding, this free site uses the Japanese martial arts practice of kata as an incentive to learn how to code in the language of your choice-they have a lot to choose from!. Geared towards older kids, you have the ability to look at other users' code, allowing a deeper understanding of the language and process. </p>
+    <a href="https://www.codewars.com/" class="btn btn-primary">Visit this site!</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+
 <div class="sidenav">
   <a href="#">Bullying</a>
   <a href="#">Sexual Harassment</a>

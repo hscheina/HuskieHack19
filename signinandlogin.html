@@ -2,15 +2,112 @@
 <html>
 <head>
   <title></title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="signinandlogin.css">
 </head>
+
+<style type="text/css">
+
+      .btn {
+      margin-left: 10px;
+      margin-right: 10px;
+      background-color: #8CBCC3;
+      border-color: #8CBCC3;
+    }
+    .btn:hover {
+      background-color: rgba(183,220,225,1);
+      border-color: rgba(183,220,225,1);
+    }
+
+    .nav-link {
+      color: #8CBCC3;
+    }
+
+    .nav-link:hover {
+      color: rgba(183,220,225,1);
+    }
+</style>
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <style type="text/css">
+    .webcontent {
+      margin-top: 120px;
+    }
+  </style>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top Dropshadow4navbar">
   <div class="container">
+  <a class="navbar-brand" href="home.html">CODE.GRL</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Forum</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="bullying.html">Bullying</a>
+          <a class="dropdown-item" href="sexualharassment.html">Sexual Harassment</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="Stereotyping.html">Stereotyping</a>
+          <a class="dropdown-item" href="misogyny.html">Misogyny</a>
+          <a class="dropdown-item" href="Femininity.html">Femininity</a>
+          <a class="dropdown-item" href="lgbt.html">LGBT</a>
+          <a class="dropdown-item" href="resourcesforparents.html">Resources for Parents</a>
+          <a class="dropdown-item" href="resourcesforteachers.html">Resources for Teachers</a>
+        </div>
+        <li class="nav-item">
+        <a class="nav-link" href="AboutUs.html">About Us</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="Contact.html">Contact</a>
+        </li>   
+            </ul>   
+          <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-light loginbtn my-2 my-sm-0"><a href="signinandlogin.html">Login</a></button>
+    </form>
+    
+</div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container webcontent">
     <div class="row">
-      <div class="col-sm"></div>
-      <div class="col-sm">
+      <div class="col-2 col-md-3 col-lg-4"></div>
+      <div class="col-8 col-md-6 col-lg-4">
   <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" data-toggle="tab" href="#menu1">Log in</a>
@@ -34,13 +131,21 @@
   </div>
   <div class="text-center">
   <input class="btn btn-primary" type="reset" value="Reset">
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Login</button>
 </div>
 </form>
   </div>
   <div id="menu2" class="tab-pane fade tap-content">
     <form>
   <div class="form-group" id="signup">
+    <div class="form-group">
+      <label for="inputFirstName">First Name</label>
+      <input type="email" class="form-control" id="inputFirstName" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+      <label for="inputLastName">Last Name</label>
+      <input type="email" class="form-control" id="inputLastName" placeholder="Enter username">
+    </div>
     <div class="form-group">
       <label for="inputUsername">Username</label>
       <input type="email" class="form-control" id="inputUsername" placeholder="Enter username">
@@ -49,6 +154,11 @@
       <label for="inputPassword4">Password</label>
       <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
     </div>
+        <div class="form-group">
+      <label for="inputPassword5">Re-enter password</label>
+      <input type="password" class="form-control" id="inputPassword5" placeholder="Re-enter Password">
+    </div>
+
     <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">I have read and understand the <a href="http://cybertwee.net/">user agreement</a></label>
@@ -65,7 +175,7 @@
 </div>
 </div>
 </div>
-<div class="col-sm"></div>
+<div class="col-2 col-md-3 col-lg-4"></div>
 </div>
 
 
