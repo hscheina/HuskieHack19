@@ -10,8 +10,27 @@ $( document ).ready(function() {
    $("#btnSignup").click(function(){
       //When this button (with the id btnSignup) is clicked, it will attempt to sign up the user
       signUser ();
-   });  
+   });
+   
 });
+function lauth(f) {
+  console.log("This did something.")
+  var g = String(f);
+  console.log(g);
+   function checkLog() {
+     if (sessionStorage.getItem('status') != null){
+      var w = "window.location.href = " + String(g);
+      console.log(w);
+        //Go to desired link
+       document.location.href = g;
+     }
+     else{
+         console.log("Failure");//show validation message
+     }
+   
+   }
+   checkLog();
+}
 
 var posts = [];
 var topics = [];
@@ -55,7 +74,13 @@ function loginUser() {
       console.log("Password matches!")
       alert("Found!")
       foundUser.lastLoginDate = moment();
+      //Sets login cookie
+      sessionStorage.setItem('status','loggedIn') 
+      console.log("After log");
       tryRedirect(1);
+      
+
+      
     }
     else {
       alert("Please put in the correct password!")
@@ -109,3 +134,13 @@ function tryRedirect(f) {
 
 }
 
+/*function checkLog() {
+  if (sessionStorage.getItem('status') != null){
+      //redirect to page
+  }
+  else{
+      console.log("Failure");//show validation message
+  }
+
+}
+*/
